@@ -9,6 +9,7 @@ final class OrmJoinColumnRequireNullableFixerTest extends AbstractCheckerTestCas
     public function testFix(): void
     {
         $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong.php.inc', __DIR__ . '/fixed/fixed.php.inc');
+        $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong2.php.inc', __DIR__ . '/fixed/fixed2.php.inc');
     }
 
     public function testCorrect(): void
