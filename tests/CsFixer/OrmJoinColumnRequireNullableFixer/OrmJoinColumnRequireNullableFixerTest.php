@@ -8,19 +8,19 @@ final class OrmJoinColumnRequireNullableFixerTest extends AbstractCheckerTestCas
 {
     public function testFix(): void
     {
-        $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong.php.inc', __DIR__ . '/fixed/fixed.php.inc');
-        $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong2.php.inc', __DIR__ . '/fixed/fixed2.php.inc');
-        $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong3.php.inc', __DIR__ . '/fixed/fixed3.php.inc');
-        $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong4.php.inc', __DIR__ . '/fixed/fixed4.php.inc');
-        $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong5.php.inc', __DIR__ . '/fixed/fixed5.php.inc');
-        $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong6.php.inc', __DIR__ . '/fixed/fixed6.php.inc');
-        $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong7.php.inc', __DIR__ . '/fixed/fixed7.php.inc');
-        $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong8.php.inc', __DIR__ . '/fixed/fixed8.php.inc');
+        $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong.php', __DIR__ . '/fixed/fixed.php');
+        $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong2.php', __DIR__ . '/fixed/fixed2.php');
+        $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong3.php', __DIR__ . '/fixed/fixed3.php');
+        $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong4.php', __DIR__ . '/fixed/fixed4.php');
+        $this->doTestWrongToFixedFile(__DIR__ . '/wrong/wrong5.php', __DIR__ . '/fixed/fixed5.php');
     }
 
     public function testCorrect(): void
     {
-        $this->doTestCorrectFile(__DIR__ . '/correct/correct.php.inc');
+        $this->doTestCorrectFile(__DIR__ . '/correct/correct.php');
+        $this->doTestCorrectFile(__DIR__ . '/correct/correct2.php');
+        $this->doTestCorrectFile(__DIR__ . '/correct/correct3.php');
+        $this->doTestCorrectFile(__DIR__ . '/correct/correct4.php');
     }
 
     protected function provideConfig(): string
