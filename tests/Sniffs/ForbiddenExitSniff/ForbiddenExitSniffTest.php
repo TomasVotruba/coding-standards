@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Tests\CodingStandards\Unit\Sniffs\ForbiddenExitSniff;
+namespace Tests\CodingStandards\Sniffs\ForbiddenExitSniff;
 
 use Symplify\EasyCodingStandardTester\Testing\AbstractCheckerTestCase;
 
