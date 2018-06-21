@@ -25,15 +25,14 @@ php composer require shopsys/coding-standards
 
 ## Usage
 
-Create `custom-coding-standard.yml` config file in your project which includes predefined rulesets. 
+Create `easy-coding-standard.yml` config file in your project which includes predefined ruleset. 
 You can also [customize the rules](./UPGRADE.md) 
 and even add your own sniffs and fixers in the config.
 
 ```yaml
-#custom-coding-standard.yml
+#easy-coding-standard.yml
 imports:
-   - { resource: '%vendor_dir%/symplify/easy-coding-standard/config/psr2.yml' }
-   - { resource: '%vendor_dir%/shopsys/coding-standards/shopsys-coding-standard.yml' }
+   - { resource: '%vendor_dir%/shopsys/coding-standards/easy-coding-standard.yml' }
 
 ```
 
