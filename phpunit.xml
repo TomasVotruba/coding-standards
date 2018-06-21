@@ -4,6 +4,7 @@
     backupGlobals="false"
     colors="true"
     verbose="true"
+    bootstrap="tests/autoload.php"
 >
     <testsuites>
         <testsuite name="Unit">
