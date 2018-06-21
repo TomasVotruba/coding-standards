@@ -3,11 +3,6 @@
 class Bar
 {
     /**
-     * @var int
-     */
-    private $number;
-
-    /**
      * @var \StdObject
      * @ORM\OneToMany(targetEntity="StdObject")
      */
