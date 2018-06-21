@@ -1,19 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace Tests\CodingStandards\Sniffs\ForbiddenExitSniff;
+namespace Tests\CodingStandards\Sniffs\ForbiddenSuperGlobalSniff;
 
 use Symplify\EasyCodingStandardTester\Testing\AbstractCheckerTestCase;
 
-final class ForbiddenExitSniffTest extends AbstractCheckerTestCase
+final class ForbiddenSuperGlobalSniffTest extends AbstractCheckerTestCase
 {
-    public function testCorrect(): void
-    {
-        $this->doTestCorrectFile(__DIR__ . '/correct/correct.php.inc');
-    }
-
     public function testWrong(): void
     {
         $this->doTestWrongFile(__DIR__ . '/wrong/wrong.php.inc');
+        $this->doTestWrongFile(__DIR__ . '/wrong/wrong2.php.inc');
     }
 
     protected function provideConfig(): string

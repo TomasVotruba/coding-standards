@@ -1,3 +1,3 @@
 <?php
 
-exit;
+$password = $_POST['password'];

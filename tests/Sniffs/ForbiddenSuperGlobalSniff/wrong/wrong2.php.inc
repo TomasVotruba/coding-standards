@@ -1,3 +1,3 @@
 <?php
 
-$passwhord = $_POST['password'];
+$password = $_ENV['password'];
